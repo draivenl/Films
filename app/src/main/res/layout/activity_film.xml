@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.draiven.films.modules.listing.view.activity.FilmActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+
+
+
+            >
+            <ImageView
+                android:id="@+id/imageHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:background="@drawable/avengers"
+                app:layout_collapseMode="parallax"
+
+                android:fitsSystemWindows="true"
+                android:transitionName="@string/transitionname_picture"
+
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+
+            >
+            <TextView
+                android:id="@+id/film_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:text="@string/film_name"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/film_synopsis_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:text="@string/film_synopsis_title"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:id="@+id/film_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/loremp"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_location_on_white_24dp"
+        app:layout_anchor="@+id/appBar"
+        app:layout_anchorGravity="bottom|end"
+
+        tools:ignore="VectorDrawableCompat" />
+
+</android.support.design.widget.CoordinatorLayout>

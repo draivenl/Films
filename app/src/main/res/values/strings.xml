@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Films</string>
+    <string name="listing_item_name_hint">Nombre de La Película</string>
+    <string name="listing_item_genre_hint">Género</string>
+    <string name="transitionname_picture">transition_picture</string>
+    <string name="film_name">Nombre de la peli</string>
+    <string name="loremp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia maximus velit at cursus. In congue, enim ut tristique blandit, risus nisi consequat lorem, a malesuada est nulla vel lacus. Vivamus scelerisque nec est quis egestas. Nunc non purus malesuada, pharetra urna in, maximus nisi. Nunc non neque id mauris elementum semper at vel libero. Morbi blandit lobortis luctus. Ut efficitur vehicula felis eu finibus. Sed a diam eros. In non lectus at mauris eleifend rutrum. Quisque a turpis fringilla, blandit justo eu, mattis leo. Integer nec orci urna. Curabitur et accumsan massa, in laoreet dui. Morbi nec enim est. Donec iaculis egestas quam, vitae tincidunt ante venenatis non. Quisque rutrum lorem vestibulum, sodales leo id, ultrices leo.</string>
+    <string name="film_synopsis_title">Synopsis</string>
+</resources>
